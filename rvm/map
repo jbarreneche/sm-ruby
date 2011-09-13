@@ -1,2 +1,2 @@
-
+install=rvm_install()
 setup=setup
