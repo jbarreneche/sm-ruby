@@ -8,7 +8,7 @@ rvm_install()
 
   curl -s "$url" -o rvm-installer
 
-  ensure_files_are_executable "${src_path}/rvm-installer"
+  files chmod "+x" "${src_path}/rvm-installer"
 
   if (( trace_flag == 1 )) ; then
     "${src_path}/rvm-installer" --trace
